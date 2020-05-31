@@ -152,7 +152,7 @@ export class ImageExtend {
             if (xhr.readyState === 4) {
                 if (xhr.status === 200) {
                     //success
-                    let res = JSON.parse(xhr.responseText)
+                    let res = typeof xhr.responseText=='string'?JSON.parse(xhr.responseText):xhr.responseText
                     self.imgURL = config.response(res)
                     QuillWatch.active.uploadSuccess()
                     self.insertImg()
