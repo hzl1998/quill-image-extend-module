@@ -79,9 +79,9 @@ export class ImageExtend {
                     return
                 }
                 if (this.config.action) {
-                    // this.uploadImg()
+                     this.uploadImg()
                 } else {
-                    // this.toBase64()
+                     this.toBase64()
                 }
             }
         }
@@ -104,9 +104,9 @@ export class ImageExtend {
         }
         self.file = e.dataTransfer.files[0]; // 获取到第一个上传的文件对象
         if (this.config.action) {
-            self.uploadImg()
+            //self.uploadImg()
         } else {
-            self.toBase64()
+            //self.toBase64()
         }
     }
 
